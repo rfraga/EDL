@@ -33,12 +33,24 @@
 ## Principais Usos
 ---
 
-&nbsp;&nbsp;&nbsp; Por ser uma linguagem considerada genérica seu uso é bem diversificado, mas o Ruby tem sido mais utilizado como ferramenta de desenvolvimento WEB, graças em grande parte pelo desenvolvimento do framework Ruby on Rails ou ROR. Plataformas populares foram construídas sobre seus códigos, como por exemplo, twitter, airbnb, shopify, github, hulu e slideshare. Outras aplicações do Ruby são:
+&nbsp;&nbsp;&nbsp; Por ser uma linguagem considerada genérica seu uso é bem diversificado, mas o Ruby tem sido mais utilizado como ferramenta de desenvolvimento WEB, graças em grande parte ao framework Ruby on Rails ou ROR. Por ser Open source e ter uma comunidade ativa, muitas startups optam por desenvolver suas aplicações em Ruby / RoR, pois conseguem adaptar e alterar o seu código de forma ágil. Por seu dinamismo e com códigos simples e constantemente descritos como elegantes tornando seu entendimento mais fácil que outras linguagens, ela vem atraíndo cada vez mais atenção. Plataformas populares foram construídas sobre seus códigos, como por exemplo twitter, airbnb, shopify, github, hulu e slideshare. Algumas outras aplicações do Ruby são:
 <br />
 
-&nbsp;&nbsp;&nbsp;* Criação de simulações <br />
-&nbsp;&nbsp;&nbsp;* Modelagem 3d <br />
-&nbsp;&nbsp;&nbsp;* Gestão de Negócios <br />
+&nbsp;&nbsp;&nbsp;* Criação de simulações - Um grupo de pesquisa na Motorola usa Ruby para fazer scripts para um simulador, tanto para gerar cenários como para processar esses mesmos dados depois. <br />
+
+&nbsp;&nbsp;&nbsp;* Modelagem 3d - O Google SketchUp é uma aplicação de modelagem 3D que utiliza o Ruby para sua macro-API de scripting. <br />
+
+&nbsp;&nbsp;&nbsp;* Gestão de Negócios - Toronto Rehab usa um programa baseado no RubyWebDialogs para gerir e acompanhar o suporte via telefone e pessoal das equipes de help desk de TI e operações de TI. <br />
+
+&nbsp;&nbsp;&nbsp;* Robótica - No projeto MORPHA, Ruby foi usado para implementar a parte do controle reativo do robô de serviços da Siemens.<br />
+
+&nbsp;&nbsp;&nbsp;* Redes - O Open Domain Server usa Ruby de forma a permitir que as pessoas usem clientes de DNS Dinâmicos para a atualização em tempo real das configurações de IP para que possam ser mapeadas em domínios estáticos.<br />
+
+&nbsp;&nbsp;&nbsp;* Telefonia - Ruby está sendo utilizado na Lucent num produto de telefonia 3G wireless.<br />
+
+&nbsp;&nbsp;&nbsp;* Administração de Sistemas - Ruby foi usado para escrever o componente de coleta de dados do sistema de Capacidade unix e Planejamento da Level 3 Communications, que recolhe estatísticas de performance de cerca de 1700 servidores Unix (Solaris e Linux) espalhados pelo mundo.<br />
+
+&nbsp;&nbsp;&nbsp;* Segurança - O Metasploit Framework, um projeto open source da comunidade gerenciado pela Rapid7, é uma plataforma gratuita de teste de penetração que permite que profissionais de TI avaliem a segurança de suas redes e aplicações. O projeto Metasploit consiste de mais de 700.000 linhas de código e foi baixado mais de um milhão de vezes em 2010. As versões comerciais desenvolvidas pela Rapid7 também são baseadas em Ruby.<br />
 
 
 
