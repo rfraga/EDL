@@ -64,38 +64,38 @@
 
 *Métodos que retornam true ou false terminam com uma interrogação em seu nome
 
-animais = ["cachorro","gato","cavalo"] #Criação de array<br />
-print animais.*include?* "gato" #Verifica se existe gato na array e imprime TRUE na tela<br />
+animais = ["cachorro","gato","cavalo"]&nbsp;&nbsp;&nbsp; *#Criação de array*<br />
+print animais.*include?* "gato"&nbsp;&nbsp;&nbsp; *#Verifica se existe gato na array e imprime TRUE na tela*<br />
 <br />
 
 *Métodos que alteram o objeto são terminados com ponto de exclamação
 
 animais = ["cachorro","gato","cavalo"]<br />
-print animais.*include?* "gato" #Imprime TRUE na tela<br />
-animais.*slice!(1)* #Retira o valor no índice 1 do array<br />
-print animais.*include?* "gato" #Imprime FALSE na tela<br />
+print animais.*include?* "gato"&nbsp;&nbsp;&nbsp; *#Imprime TRUE na tela*<br />
+animais.*slice!(1)*&nbsp;&nbsp;&nbsp; *#Retira o valor no índice 1 do array*<br />
+print animais.*include?* "gato"&nbsp;&nbsp;&nbsp; *#Imprime FALSE na tela*<br />
 <br />
 
 *Métodos "attribute accessors" para manipulação de atributos de um objeto
 
-class Bichos
-  attr_accessor :animais #Equivalente a criar o atributo animais e os métodos getAnimais (animais) e setAnimais (animais=)
-end
-
-exemplo = Bichos.new() #Cria a instância da classe Bichos
-exemplo.animais = ["cachorro","gato","cavalo"] #Utiliza o método "animais=" para 
-print exemplo.animais
-
-
+class Bichos<br />
+  *attr_accessor* :animais&nbsp;&nbsp;&nbsp; *#Equivalente a criar o atributo animais e os métodos getAnimais (animais) e setAnimais (animais=)*<br />
+end<br />
+<br />
+exemplo = Bichos.new()&nbsp;&nbsp;&nbsp; *#Cria a instância da classe Bichos*<br />
+exemplo.animais = ["cachorro","gato","cavalo"]&nbsp;&nbsp;&nbsp; *#Utiliza o método "animais=" para atribuir valores ao atributo animais*<br />
+print exemplo.animais&nbsp;&nbsp;&nbsp; *#Utiliza o método "animais" para retornar os valores do atributo animais*
 
 
 
 
 
+<br />
+<br />
 
-
+---
 ## Bibliografia
-
+---
 Wikipedia - Ruby(linguagem de programação): https://pt.wikipedia.org/wiki/Ruby_(linguagem_de_programa%C3%A7%C3%A3o)<br />
 Sitepoint - The History of Ruby: https://www.sitepoint.com/history-ruby/<br />
 Ruby - Sobre o Ruby: https://www.ruby-lang.org/pt/about/<br />
