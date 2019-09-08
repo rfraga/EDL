@@ -92,9 +92,18 @@
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.**upto(limite)** {&nbsp;&nbsp;&nbsp;*#1 é uma instância da classe Fixnum e chama o método "upto" equivalente ao FOR*<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|i| puts i if i % 2 == 0<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
-|&nbsp;&nbsp;nd<br />
+|&nbsp;&nbsp;end<br />
 |<br />
-|&nbsp;&nbsp;pares(8)<br />
+<br />
+O trecho em Java seria:
+<br />
+
+|&nbsp;&nbsp;public void pares(int limite){&nbsp;&nbsp;&nbsp;<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int i = 1; i<= limite; i++){<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(i % 2) System.out.println(i);<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+|&nbsp;&nbsp;}<br />
+
 
 
 
