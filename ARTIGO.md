@@ -64,37 +64,37 @@
 
 **Métodos que retornam true ou false terminam com uma interrogação em seu nome**
 
-animais = ["cachorro","gato","cavalo"]&nbsp;&nbsp;&nbsp;<br />
-print animais.**include?** "gato"&nbsp;&nbsp;&nbsp; *#Verifica se existe gato na array e imprime TRUE na tela*<br />
+|animais = ["cachorro","gato","cavalo"]&nbsp;&nbsp;&nbsp;<br />
+|print animais.**include?** "gato"&nbsp;&nbsp;&nbsp; *#Verifica se existe gato na array e imprime TRUE na tela*<br />
 <br />
 
 **Métodos que alteram o objeto são terminados com ponto de exclamação**
 
-animais = ["cachorro","gato","cavalo"]<br />
-animais.**slice!(1)**&nbsp;&nbsp;&nbsp; *#Retira o valor no índice 1 do array*<br />
-print animais.include? "gato"&nbsp;&nbsp;&nbsp; *#Imprime FALSE na tela*<br />
+|animais = ["cachorro","gato","cavalo"]<br />
+|animais.**slice!(1)**&nbsp;&nbsp;&nbsp; *#Retira o valor no índice 1 do array*<br />
+|print animais.include? "gato"&nbsp;&nbsp;&nbsp; *#Imprime FALSE na tela*<br />
 <br />
 
 **Métodos "attribute accessors" para manipulação de atributos de um objeto**
 
-class Bichos<br />
-&nbsp;&nbsp;&nbsp;**attr_accessor :animais**&nbsp;&nbsp;&nbsp; *#Equivalente a criar o atributo animais e os métodos getAnimais (animais) e setAnimais (animais=)*<br />
-end<br />
-<br />
-exemplo = Bichos.new()&nbsp;&nbsp;&nbsp;<br />
-exemplo.animais = ["cachorro","gato","cavalo"]&nbsp;&nbsp;&nbsp;<br />
-print exemplo.animais&nbsp;&nbsp;&nbsp;<br />
+|class Bichos<br />
+|&nbsp;&nbsp;&nbsp;**attr_accessor :animais**&nbsp;&nbsp;&nbsp; *#Equivalente a criar o atributo animais e os métodos animais e animais=*<br />
+|end<br />
+|<br />
+|exemplo = Bichos.new()&nbsp;&nbsp;&nbsp;<br />
+|exemplo.**animais =** ["cachorro","gato","cavalo"]&nbsp;&nbsp;&nbsp;<br />
+|print exemplo.**animais**&nbsp;&nbsp;&nbsp;<br />
 <br />
 
 **As variáveis, por serem instâncias, possuem métodos que facilitam desenvolvimento em Ruby**
 
-def pares(limite)&nbsp;&nbsp;&nbsp;<br />
-&nbsp;&nbsp;&nbsp;1.**upto(limite)** {&nbsp;&nbsp;&nbsp;*#1 é uma instância da classe Fixnum e chama o método "upto" equivalente ao FOR*<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|i| puts i if i % 2 == 0&br />
-&nbsp;&nbsp;&nbsp;}
-end
-
-pares(8)
+|def pares(limite)&nbsp;&nbsp;&nbsp;<br />
+|&nbsp;&nbsp;&nbsp;1.**upto(limite)** {&nbsp;&nbsp;&nbsp;*#1 é uma instância da classe Fixnum e chama o método "upto" equivalente ao FOR*<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|i| puts i if i % 2 == 0<br />
+|&nbsp;&nbsp;&nbsp;}<br />
+|end<br />
+|<br />
+|pares(8)<br />
 
 
 
