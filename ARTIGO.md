@@ -37,21 +37,21 @@
 &nbsp;&nbsp;&nbsp; Por ser uma linguagem considerada genérica seu uso é bem diversificado, mas o Ruby tem sido mais utilizado como ferramenta de desenvolvimento WEB, graças em grande parte ao framework Ruby on Rails ou ROR. Por ser Open source e ter uma comunidade ativa, muitas startups optam por desenvolver suas aplicações em Ruby / RoR, pois conseguem adaptar e alterar o seu código de forma ágil. Por seu dinamismo e com códigos simples e constantemente descritos como elegantes tornando seu entendimento mais fácil que outras linguagens, ela vem atraíndo cada vez mais atenção. Plataformas populares foram construídas sobre seus códigos, como por exemplo twitter, airbnb, shopify, github, hulu e slideshare. Algumas outras aplicações do Ruby são:
 <br />
 
-&nbsp;&nbsp;&nbsp;* Criação de simulações - Um grupo de pesquisa na Motorola usa Ruby para fazer scripts para um simulador, tanto para gerar cenários como para processar esses mesmos dados depois. <br />
+&nbsp;&nbsp;&nbsp;**Criação de simulações** - Um grupo de pesquisa na Motorola usa Ruby para fazer scripts para um simulador, tanto para gerar cenários como para processar esses mesmos dados depois. <br />
 
-&nbsp;&nbsp;&nbsp;* Modelagem 3d - O Google SketchUp é uma aplicação de modelagem 3D que utiliza o Ruby para sua macro-API de scripting. <br />
+&nbsp;&nbsp;&nbsp;**Modelagem 3d** - O Google SketchUp é uma aplicação de modelagem 3D que utiliza o Ruby para sua macro-API de scripting. <br />
 
-&nbsp;&nbsp;&nbsp;* Gestão de Negócios - Toronto Rehab usa um programa baseado no RubyWebDialogs para gerir e acompanhar o suporte via telefone e pessoal das equipes de help desk de TI e operações de TI. <br />
+&nbsp;&nbsp;&nbsp;**Gestão de Negócios** - Toronto Rehab usa um programa baseado no RubyWebDialogs para gerir e acompanhar o suporte via telefone e pessoal das equipes de help desk de TI e operações de TI. <br />
 
-&nbsp;&nbsp;&nbsp;* Robótica - No projeto MORPHA, Ruby foi usado para implementar a parte do controle reativo do robô de serviços da Siemens.<br />
+&nbsp;&nbsp;&nbsp;**Robótica** - No projeto MORPHA, Ruby foi usado para implementar a parte do controle reativo do robô de serviços da Siemens.<br />
 
-&nbsp;&nbsp;&nbsp;* Redes - O Open Domain Server usa Ruby de forma a permitir que as pessoas usem clientes de DNS Dinâmicos para a atualização em tempo real das configurações de IP para que possam ser mapeadas em domínios estáticos.<br />
+&nbsp;&nbsp;&nbsp;**Redes** - O Open Domain Server usa Ruby de forma a permitir que as pessoas usem clientes de DNS Dinâmicos para a atualização em tempo real das configurações de IP para que possam ser mapeadas em domínios estáticos.<br />
 
-&nbsp;&nbsp;&nbsp;* Telefonia - Ruby está sendo utilizado na Lucent num produto de telefonia 3G wireless.<br />
+&nbsp;&nbsp;&nbsp;**Telefonia** - Ruby está sendo utilizado na Lucent num produto de telefonia 3G wireless.<br />
 
-&nbsp;&nbsp;&nbsp;* Administração de Sistemas - Ruby foi usado para escrever o componente de coleta de dados do sistema de Capacidade unix e Planejamento da Level 3 Communications, que recolhe estatísticas de performance de cerca de 1700 servidores Unix (Solaris e Linux) espalhados pelo mundo.<br />
+&nbsp;&nbsp;&nbsp; **Administração de Sistemas** - Ruby foi usado para escrever o componente de coleta de dados do sistema de Capacidade unix e Planejamento da Level 3 Communications, que recolhe estatísticas de performance de cerca de 1700 servidores Unix (Solaris e Linux) espalhados pelo mundo.<br />
 
-&nbsp;&nbsp;&nbsp;* Segurança - O Metasploit Framework, um projeto open source da comunidade gerenciado pela Rapid7, é uma plataforma gratuita de teste de penetração que permite que profissionais de TI avaliem a segurança de suas redes e aplicações. O projeto Metasploit consiste de mais de 700.000 linhas de código e foi baixado mais de um milhão de vezes em 2010. As versões comerciais desenvolvidas pela Rapid7 também são baseadas em Ruby.<br />
+&nbsp;&nbsp;&nbsp;**Segurança** - O Metasploit Framework, um projeto open source da comunidade gerenciado pela Rapid7, é uma plataforma gratuita de teste de penetração que permite que profissionais de TI avaliem a segurança de suas redes e aplicações. O projeto Metasploit consiste de mais de 700.000 linhas de código e foi baixado mais de um milhão de vezes em 2010. As versões comerciais desenvolvidas pela Rapid7 também são baseadas em Ruby.<br />
 <br />
 <br />
 
@@ -62,29 +62,40 @@
 
 &nbsp;&nbsp;&nbsp; Uma de suas principais características é a expressividade que possui. O desenvolvimento da linguagem Ruby teve como objetivo desde o início que fosse uma linguagem muito simples de ler e ser entendida, para facilitar o desenvolvimento e manutenção de sistemas escritos com ela. Exemplos de expressividade:
 
-*Métodos que retornam true ou false terminam com uma interrogação em seu nome
+**Métodos que retornam true ou false terminam com uma interrogação em seu nome**
 
 animais = ["cachorro","gato","cavalo"]&nbsp;&nbsp;&nbsp; *#Criação de array*<br />
 print animais.*include?* "gato"&nbsp;&nbsp;&nbsp; *#Verifica se existe gato na array e imprime TRUE na tela*<br />
 <br />
 
-*Métodos que alteram o objeto são terminados com ponto de exclamação
+**Métodos que alteram o objeto são terminados com ponto de exclamação**
 
 animais = ["cachorro","gato","cavalo"]<br />
-print animais.*include?* "gato"&nbsp;&nbsp;&nbsp; *#Imprime TRUE na tela*<br />
+print animais.include? "gato"&nbsp;&nbsp;&nbsp; *#Imprime TRUE na tela*<br />
 animais.*slice!(1)*&nbsp;&nbsp;&nbsp; *#Retira o valor no índice 1 do array*<br />
-print animais.*include?* "gato"&nbsp;&nbsp;&nbsp; *#Imprime FALSE na tela*<br />
+print animais.include? "gato"&nbsp;&nbsp;&nbsp; *#Imprime FALSE na tela*<br />
 <br />
 
-*Métodos "attribute accessors" para manipulação de atributos de um objeto
+**Métodos "attribute accessors" para manipulação de atributos de um objeto**
 
 class Bichos<br />
-  *attr_accessor* :animais&nbsp;&nbsp;&nbsp; *#Equivalente a criar o atributo animais e os métodos getAnimais (animais) e setAnimais (animais=)*<br />
+&nbsp;&nbsp;&nbsp;*attr_accessor* :animais&nbsp;&nbsp;&nbsp; *#Equivalente a criar o atributo animais e os métodos getAnimais (animais) e setAnimais (animais=)*<br />
 end<br />
 <br />
 exemplo = Bichos.new()&nbsp;&nbsp;&nbsp; *#Cria a instância da classe Bichos*<br />
 exemplo.animais = ["cachorro","gato","cavalo"]&nbsp;&nbsp;&nbsp; *#Utiliza o método "animais=" para atribuir valores ao atributo animais*<br />
-print exemplo.animais&nbsp;&nbsp;&nbsp; *#Utiliza o método "animais" para retornar os valores do atributo animais*
+print exemplo.animais&nbsp;&nbsp;&nbsp; *#Utiliza o método "animais" para retornar os valores do atributo animais*<br />
+<br />
+
+**As variáveis, por serem instâncias, possuem métodos que facilitam desenvolvimento em Ruby**
+
+def pares(limite)&nbsp;&nbsp;&nbsp;*#Definição da função que irá devolver os número pares entre um intervalo de números*<br />
+&nbsp;&nbsp;&nbsp;1.upto(limite) {&nbsp;&nbsp;&nbsp;*#1 é uma instância da classe Fixnum e chama o método "upto" equivalente ao FOR*<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|i| puts i if i % 2 == 0&nbsp;&nbsp;&nbsp;*#Cria a variável i atribuindo o valor
+&nbsp;&nbsp;&nbsp;}
+end
+
+pares(8)
 
 
 
