@@ -65,21 +65,21 @@
 **Métodos que retornam true ou false terminam com uma interrogação em seu nome**
 
 animais = ["cachorro","gato","cavalo"]&nbsp;&nbsp;&nbsp; *#Criação de array*<br />
-print animais.*include?* "gato"&nbsp;&nbsp;&nbsp; *#Verifica se existe gato na array e imprime TRUE na tela*<br />
+print animais.**include?** "gato"&nbsp;&nbsp;&nbsp; *#Verifica se existe gato na array e imprime TRUE na tela*<br />
 <br />
 
 **Métodos que alteram o objeto são terminados com ponto de exclamação**
 
 animais = ["cachorro","gato","cavalo"]<br />
 print animais.include? "gato"&nbsp;&nbsp;&nbsp; *#Imprime TRUE na tela*<br />
-animais.*slice!(1)*&nbsp;&nbsp;&nbsp; *#Retira o valor no índice 1 do array*<br />
+animais.**slice!(1)**&nbsp;&nbsp;&nbsp; *#Retira o valor no índice 1 do array*<br />
 print animais.include? "gato"&nbsp;&nbsp;&nbsp; *#Imprime FALSE na tela*<br />
 <br />
 
 **Métodos "attribute accessors" para manipulação de atributos de um objeto**
 
 class Bichos<br />
-&nbsp;&nbsp;&nbsp;*attr_accessor* :animais&nbsp;&nbsp;&nbsp; *#Equivalente a criar o atributo animais e os métodos getAnimais (animais) e setAnimais (animais=)*<br />
+&nbsp;&nbsp;&nbsp;**attr_accessor :animais**&nbsp;&nbsp;&nbsp; *#Equivalente a criar o atributo animais e os métodos getAnimais (animais) e setAnimais (animais=)*<br />
 end<br />
 <br />
 exemplo = Bichos.new()&nbsp;&nbsp;&nbsp; *#Cria a instância da classe Bichos*<br />
@@ -90,7 +90,7 @@ print exemplo.animais&nbsp;&nbsp;&nbsp; *#Utiliza o método "animais" para retor
 **As variáveis, por serem instâncias, possuem métodos que facilitam desenvolvimento em Ruby**
 
 def pares(limite)&nbsp;&nbsp;&nbsp;*#Definição da função que irá devolver os número pares entre um intervalo de números*<br />
-&nbsp;&nbsp;&nbsp;1.upto(limite) {&nbsp;&nbsp;&nbsp;*#1 é uma instância da classe Fixnum e chama o método "upto" equivalente ao FOR*<br />
+&nbsp;&nbsp;&nbsp;1.**upto(limite)** {&nbsp;&nbsp;&nbsp;*#1 é uma instância da classe Fixnum e chama o método "upto" equivalente ao FOR*<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|i| puts i if i % 2 == 0&nbsp;&nbsp;&nbsp;*#Cria a variável i atribuindo o valor
 &nbsp;&nbsp;&nbsp;}
 end
