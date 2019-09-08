@@ -1,6 +1,7 @@
 # RUBY
 <br />
 
+---
 ## História
 ---
 
@@ -11,10 +12,10 @@
 &nbsp;&nbsp;&nbsp; Ruby se tornou uma linguagem pública em dezembro de 1995, com o release da versão 0.95 no Japão. Em 1998, visando expandir o uso da linguagem globalmente, foi criada a primeira lista de discussões, o Ruby-Talk. Em 1999 Matz escreveu o primeiro livro sobre programação em Ruby e em 2001 foi lançado o primeiro livro em inglês, tornando a linguagem acessível a um público maior. A "decolagem" do Ruby veio em 2005 com a criação do Ruby on Rails, um framework que faz o desenvolvimento, implantação e manutenção de uma aplicação web mais fácil. Desde então a aceitação da linguagem não parou de crescer resultando na formação de grupos de usuários em todas as principais cidades do mundo e com as conferências sobre Ruby com lotação esgotada.
 <br />
 <br />
-
+<br />
  
  
- 
+---
 ## Características
 ---
 
@@ -26,10 +27,10 @@
 &nbsp;&nbsp;&nbsp;* Open-source.
 <br />
 <br />
+<br />
 
 
-
-
+---
 ## Principais Usos
 ---
 
@@ -51,6 +52,39 @@
 &nbsp;&nbsp;&nbsp;* Administração de Sistemas - Ruby foi usado para escrever o componente de coleta de dados do sistema de Capacidade unix e Planejamento da Level 3 Communications, que recolhe estatísticas de performance de cerca de 1700 servidores Unix (Solaris e Linux) espalhados pelo mundo.<br />
 
 &nbsp;&nbsp;&nbsp;* Segurança - O Metasploit Framework, um projeto open source da comunidade gerenciado pela Rapid7, é uma plataforma gratuita de teste de penetração que permite que profissionais de TI avaliem a segurança de suas redes e aplicações. O projeto Metasploit consiste de mais de 700.000 linhas de código e foi baixado mais de um milhão de vezes em 2010. As versões comerciais desenvolvidas pela Rapid7 também são baseadas em Ruby.<br />
+<br />
+<br />
+
+
+---
+## Expressividade
+---
+
+&nbsp;&nbsp;&nbsp; Uma de suas principais características é a expressividade que possui. O desenvolvimento da linguagem Ruby teve como objetivo desde o início que fosse uma linguagem muito simples de ler e ser entendida, para facilitar o desenvolvimento e manutenção de sistemas escritos com ela. Exemplos de expressividade:
+
+*Métodos que retornam true ou false terminam com uma interrogação em seu nome
+
+animais = ["cachorro","gato","cavalo"] #Criação de array<br />
+print animais.*include?* "gato" #Verifica se existe gato na array e imprime TRUE na tela<br />
+<br />
+
+*Métodos que alteram o objeto são terminados com ponto de exclamação
+
+animais = ["cachorro","gato","cavalo"]<br />
+print animais.*include?* "gato" #Imprime TRUE na tela<br />
+animais.*slice!(1)* #Retira o valor no índice 1 do array<br />
+print animais.*include?* "gato" #Imprime FALSE na tela<br />
+<br />
+
+*Métodos "attribute accessors" para manipulação de atributos de um objeto
+
+class Bichos
+  attr_accessor :animais #Equivalente a criar o atributo animais e os métodos getAnimais (animais) e setAnimais (animais=)
+end
+
+exemplo = Bichos.new() #Cria a instância da classe Bichos
+exemplo.animais = ["cachorro","gato","cavalo"] #Utiliza o método "animais=" para 
+print exemplo.animais
 
 
 
@@ -67,8 +101,9 @@ Sitepoint - The History of Ruby: https://www.sitepoint.com/history-ruby/<br />
 Ruby - Sobre o Ruby: https://www.ruby-lang.org/pt/about/<br />
 DEVMEDIA - Ruby on Rails Tutorial: https://www.devmedia.com.br/ruby-on-rails-tutorial/31285<br />
 DEVMEDIA - Conhecendo a Linguagem Ruby: https://www.devmedia.com.br/conhecendo-a-linguagem-ruby/8226<br />
-EU SOU DEV - Dúvida cruel: Ruby ou PHP?: https://eusoudev.com.br/ruby-ou-php/
-
+EU SOU DEV - Dúvida cruel: Ruby ou PHP?: https://eusoudev.com.br/ruby-ou-php/<br />
+Caelum - A linguagem Ruby: https://www.caelum.com.br/apostila-ruby-on-rails/a-linguagem-ruby/#2-1-a-historia-do-ruby-e-suas-caracteristicas<br />
+Arthur de Moura Del Esposte - Orientação a Objetos com Ruby: https://www.ime.usp.br/~esposte/documents/aula-ruby/aula01/Aula01.pdf
 
 
 
