@@ -64,14 +64,13 @@
 
 **Métodos que retornam true ou false terminam com uma interrogação em seu nome**
 
-animais = ["cachorro","gato","cavalo"]&nbsp;&nbsp;&nbsp; *#Criação de array*<br />
+animais = ["cachorro","gato","cavalo"]&nbsp;&nbsp;&nbsp;<br />
 print animais.**include?** "gato"&nbsp;&nbsp;&nbsp; *#Verifica se existe gato na array e imprime TRUE na tela*<br />
 <br />
 
 **Métodos que alteram o objeto são terminados com ponto de exclamação**
 
 animais = ["cachorro","gato","cavalo"]<br />
-print animais.include? "gato"&nbsp;&nbsp;&nbsp; *#Imprime TRUE na tela*<br />
 animais.**slice!(1)**&nbsp;&nbsp;&nbsp; *#Retira o valor no índice 1 do array*<br />
 print animais.include? "gato"&nbsp;&nbsp;&nbsp; *#Imprime FALSE na tela*<br />
 <br />
@@ -82,16 +81,16 @@ class Bichos<br />
 &nbsp;&nbsp;&nbsp;**attr_accessor :animais**&nbsp;&nbsp;&nbsp; *#Equivalente a criar o atributo animais e os métodos getAnimais (animais) e setAnimais (animais=)*<br />
 end<br />
 <br />
-exemplo = Bichos.new()&nbsp;&nbsp;&nbsp; *#Cria a instância da classe Bichos*<br />
-exemplo.animais = ["cachorro","gato","cavalo"]&nbsp;&nbsp;&nbsp; *#Utiliza o método "animais=" para atribuir valores ao atributo animais*<br />
-print exemplo.animais&nbsp;&nbsp;&nbsp; *#Utiliza o método "animais" para retornar os valores do atributo animais*<br />
+exemplo = Bichos.new()&nbsp;&nbsp;&nbsp;<br />
+exemplo.animais = ["cachorro","gato","cavalo"]&nbsp;&nbsp;&nbsp;<br />
+print exemplo.animais&nbsp;&nbsp;&nbsp;<br />
 <br />
 
 **As variáveis, por serem instâncias, possuem métodos que facilitam desenvolvimento em Ruby**
 
-def pares(limite)&nbsp;&nbsp;&nbsp;*#Definição da função que irá devolver os número pares entre um intervalo de números*<br />
+def pares(limite)&nbsp;&nbsp;&nbsp;<br />
 &nbsp;&nbsp;&nbsp;1.**upto(limite)** {&nbsp;&nbsp;&nbsp;*#1 é uma instância da classe Fixnum e chama o método "upto" equivalente ao FOR*<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|i| puts i if i % 2 == 0&nbsp;&nbsp;&nbsp;*#Cria a variável i atribuindo o valor
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|i| puts i if i % 2 == 0&br />
 &nbsp;&nbsp;&nbsp;}
 end
 
@@ -108,13 +107,22 @@ pares(8)
 ## Bibliografia
 ---
 Wikipedia - Ruby(linguagem de programação): https://pt.wikipedia.org/wiki/Ruby_(linguagem_de_programa%C3%A7%C3%A3o)<br />
+
 Sitepoint - The History of Ruby: https://www.sitepoint.com/history-ruby/<br />
+
 Ruby - Sobre o Ruby: https://www.ruby-lang.org/pt/about/<br />
+
 DEVMEDIA - Ruby on Rails Tutorial: https://www.devmedia.com.br/ruby-on-rails-tutorial/31285<br />
+
 DEVMEDIA - Conhecendo a Linguagem Ruby: https://www.devmedia.com.br/conhecendo-a-linguagem-ruby/8226<br />
+
 EU SOU DEV - Dúvida cruel: Ruby ou PHP?: https://eusoudev.com.br/ruby-ou-php/<br />
+
 Caelum - A linguagem Ruby: https://www.caelum.com.br/apostila-ruby-on-rails/a-linguagem-ruby/#2-1-a-historia-do-ruby-e-suas-caracteristicas<br />
-Arthur de Moura Del Esposte - Orientação a Objetos com Ruby: https://www.ime.usp.br/~esposte/documents/aula-ruby/aula01/Aula01.pdf
+
+Arthur de Moura Del Esposte - Orientação a Objetos com Ruby: https://www.ime.usp.br/~esposte/documents/aula-ruby/aula01/Aula01.pdf<br />
+
+Carlos Henrique Costa Junior, Daniel de Andrade, Darlan Pedro de Campos e Guilherme Silvestre Gomes - Ruby: https://www.inf.ufsc.br/~frank.siqueira/INE5612/Seminario2010.1/Ruby.pdf
 
 
 
