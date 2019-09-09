@@ -85,7 +85,6 @@
 |&nbsp;&nbsp;exemplo.**animais =** ["cachorro","gato","cavalo"]&nbsp;&nbsp;&nbsp;<br />
 |&nbsp;&nbsp;print exemplo.**animais**&nbsp;&nbsp;&nbsp;<br />
 <br />
-
 Equivalente em Java:
 <br />
 <br />
@@ -103,6 +102,7 @@ Equivalente em Java:
 |&nbsp;&nbsp;&nbsp;&nbsp;}<br />
 |&nbsp;&nbsp;}<br />
 <br />
+
 **As variáveis, por serem instâncias, possuem métodos que facilitam desenvolvimento em Ruby**
 
 |&nbsp;&nbsp;def pares(limite)&nbsp;&nbsp;&nbsp;<br />
