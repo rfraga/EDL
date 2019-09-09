@@ -68,7 +68,7 @@
 |&nbsp;&nbsp;print animais.**include?** "gato"&nbsp;&nbsp;&nbsp; *#Verifica se existe gato na array e imprime TRUE na tela*<br />
 <br />
 
-**Métodos que alteram o objeto são terminados com ponto de exclamação**
+**Métodos que alteram o objeto são terminados com ponto de exclamação indicando um certo perigo **
 
 |&nbsp;&nbsp;animais = ["cachorro","gato","cavalo"]<br />
 |&nbsp;&nbsp;animais.**slice!(1)**&nbsp;&nbsp;&nbsp; *#Retira o valor no índice 1 do array*<br />
@@ -87,17 +87,17 @@ Equivalente em Java:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		animais.add("cachorro");<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		animais.add("gato");<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		animais.add("cavalo");<br />
-|&nbsp;&nbsp;//====== Similar ao slice! ======		<br />
+|&nbsp;&nbsp;//====== slice! ======		<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; animais.remove(1);<br />
 |&nbsp;&nbsp;//=============================== <br />
-|&nbsp;&nbsp;//====== Similar ao include? ====== <br />
+|&nbsp;&nbsp;//====== include? ====== <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		for(int i = 0; i<array.size(); i++){<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		    if(animais.get(i).equals("gato")){<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		        achou = true;<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		        break;<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		    }<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		}<br />
-||&nbsp;&nbsp;//================================<br />
+||&nbsp;&nbsp;//===============================<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		System.out.println(achou);<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;	}<br />
 |&nbsp;&nbsp;}<br />
