@@ -74,6 +74,33 @@
 |&nbsp;&nbsp;animais.**slice!(1)**&nbsp;&nbsp;&nbsp; *#Retira o valor no índice 1 do array*<br />
 |&nbsp;&nbsp;print animais.include? "gato"&nbsp;&nbsp;&nbsp; *#Imprime FALSE na tela*<br />
 <br />
+Equivalente em Java:
+<br />
+|&nbsp;&nbsp;import java.util.\*;<br />
+|<br />
+|&nbsp;&nbsp;public class Main{<br />
+|<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;	public static void main(String[] args) {<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		List animais = new ArrayList();<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		boolean achou = false;<br />
+|		<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		animais.add("cachorro");<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		animais.add("gato");<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		animais.add("cavalo");<br />
+|		<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; animais.remove(1);<br />
+|<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		for(int i = 0; i<array.size(); i++){<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		    if(animais.get(i).equals("gato")){<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		        achou = true;<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		        break;<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		    }<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		}<br />
+|<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		System.out.println(achou);<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;	}<br />
+|&nbsp;&nbsp;}<br />
+<br />
 
 **Métodos "attribute accessors" para manipulação de atributos de um objeto**
 
