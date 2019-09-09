@@ -85,6 +85,23 @@
 |&nbsp;&nbsp;exemplo.**animais =** ["cachorro","gato","cavalo"]&nbsp;&nbsp;&nbsp;<br />
 |&nbsp;&nbsp;print exemplo.**animais**&nbsp;&nbsp;&nbsp;<br />
 <br />
+<br />
+Equivalente em Java:
+<br />
+
+|&nbsp;&nbsp;import java.util.\*;<br />
+|<br />
+|&nbsp;&nbsp;public class Bichos{<br />
+|&nbsp;&nbsp;|&nbsp;&nbsp;Vector animais = new Vector();<br />
+|<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;public String getAnimais(){<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return this.animais.toString();<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+|<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;public void setAnimais(String animal){<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.animais.add(animal);<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+|&nbsp;&nbsp;}<br />
 
 **As variáveis, por serem instâncias, possuem métodos que facilitam desenvolvimento em Ruby**
 
@@ -93,9 +110,9 @@
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|i| puts i if i % 2 == 0<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
 |&nbsp;&nbsp;end<br />
-|<br />
 <br />
-O trecho em Java seria:
+<br />
+Equivalente em Java:
 <br />
 
 |&nbsp;&nbsp;public void pares(int limite){&nbsp;&nbsp;&nbsp;<br />
