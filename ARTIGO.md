@@ -102,7 +102,7 @@ Equivalente em Java:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.animais.add(animal);<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;}<br />
 |&nbsp;&nbsp;}<br />
-
+<br />
 **As variáveis, por serem instâncias, possuem métodos que facilitam desenvolvimento em Ruby**
 
 |&nbsp;&nbsp;def pares(limite)&nbsp;&nbsp;&nbsp;<br />
@@ -111,9 +111,7 @@ Equivalente em Java:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
 |&nbsp;&nbsp;end<br />
 <br />
-
 Equivalente em Java:
-<br />
 <br />
 |&nbsp;&nbsp;public void pares(int limite){&nbsp;&nbsp;&nbsp;<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int i = 1; i<= limite; i++){<br />
