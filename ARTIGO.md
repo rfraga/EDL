@@ -68,7 +68,7 @@
 |&nbsp;&nbsp;print animais.**include?** "gato"&nbsp;&nbsp;&nbsp; *#Verifica se existe gato na array e imprime TRUE na tela*<br />
 <br />
 
-**Métodos que alteram o objeto são terminados com ponto de exclamação indicando um certo perigo **
+**Métodos que alteram o objeto são terminados com ponto de exclamação indicando um certo perigo**
 
 |&nbsp;&nbsp;animais = ["cachorro","gato","cavalo"]<br />
 |&nbsp;&nbsp;animais.**slice!(1)**&nbsp;&nbsp;&nbsp; *#Retira o valor no índice 1 do array*<br />
