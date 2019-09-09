@@ -87,16 +87,17 @@ Equivalente em Java:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		animais.add("cachorro");<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		animais.add("gato");<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		animais.add("cavalo");<br />
-|		<br />
+|&nbsp;&nbsp;//====== Similar ao slice! ======		<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; animais.remove(1);<br />
-|<br />
+|&nbsp;&nbsp;//=============================== <br />
+|&nbsp;&nbsp;//====== Similar ao include? ====== <br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		for(int i = 0; i<array.size(); i++){<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		    if(animais.get(i).equals("gato")){<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		        achou = true;<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		        break;<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		    }<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		}<br />
-|<br />
+||&nbsp;&nbsp;//================================<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		System.out.println(achou);<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;	}<br />
 |&nbsp;&nbsp;}<br />
