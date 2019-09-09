@@ -78,17 +78,17 @@
 **Métodos "attribute accessors" para manipulação de atributos de um objeto**
 
 |&nbsp;&nbsp;class Bichos<br />
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**attr_accessor :animais**&nbsp;&nbsp;&nbsp; *#Equivalente a criar o atributo animais e os métodos animais e animais=*<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**attr_accessor :animais**&nbsp;&nbsp;&nbsp; *#Cria o atributo animais e os métodos animais e animais=*<br />
 |&nbsp;&nbsp;end<br />
 |&nbsp;&nbsp;<br />
 |&nbsp;&nbsp;exemplo = Bichos.new()&nbsp;&nbsp;&nbsp;<br />
 |&nbsp;&nbsp;exemplo.**animais =** ["cachorro","gato","cavalo"]&nbsp;&nbsp;&nbsp;<br />
 |&nbsp;&nbsp;print exemplo.**animais**&nbsp;&nbsp;&nbsp;<br />
 <br />
-<br />
+
 Equivalente em Java:
 <br />
-
+<br />
 |&nbsp;&nbsp;import java.util.\*;<br />
 |<br />
 |&nbsp;&nbsp;public class Bichos{<br />
@@ -111,10 +111,10 @@ Equivalente em Java:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
 |&nbsp;&nbsp;end<br />
 <br />
-<br />
+
 Equivalente em Java:
 <br />
-
+<br />
 |&nbsp;&nbsp;public void pares(int limite){&nbsp;&nbsp;&nbsp;<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int i = 1; i<= limite; i++){<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(i % 2) System.out.println(i);<br />
