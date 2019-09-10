@@ -151,8 +151,8 @@ Equivalente em Java:
 **Monkey Patch**
 
 No Ruby é possível implementar métodos inclusive nas classes nativas da língua, recurso inexistente no Java, que para conseguir um efeito parecido deveria criar uma nova classe já que suas classes são fechadas. Um exemplo interessante dessa característica é a classe Fixnum, subclasse de Integer. O Ruby é uma linguagem fortemente tipada, mas essa característica poderia ser contornada com a inclusão de um novo método na classe Integer, possibiliatando comandos como 1 + "2".
-
 <br />
+
 |&nbsp;&nbsp;class Fixnum<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alias :soma_velha :+<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def +(valor)<br />
