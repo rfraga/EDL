@@ -131,7 +131,7 @@ Equivalente em Java:
 |&nbsp;&nbsp;}<br />
 <br />
 
-**As variáveis, por serem instâncias, possuem métodos que facilitam desenvolvimento em Ruby**
+**Tudo é objeto e como tal possuem métodos que facilitam desenvolvimento em Ruby**
 
 |&nbsp;&nbsp;def pares(limite)&nbsp;&nbsp;&nbsp;<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.**upto(limite)** {&nbsp;&nbsp;&nbsp;*#1 é uma instância da classe Fixnum e chama o método "upto" equivalente ao FOR*<br />
@@ -146,6 +146,23 @@ Equivalente em Java:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(i % 2) System.out.println(i);<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
 |&nbsp;&nbsp;}<br />
+<br />
+
+**Monkey Patch**
+
+No Ruby é possível implementar métodos inclusive nas classes nativas da língua, recurso inexistente no Java, que para conseguir um efeito parecido deveria criar uma nova classe já que suas classes são fechadas. Um exemplo interessante dessa característica é a classe Fixnum, subclasse de Integer. O Ruby é uma linguagem fortemente tipada, mas essa característica poderia ser contornada com a inclusão de um novo método na classe Integer, possibiliatando comandos como 1 + "2".
+
+<br />
+|&nbsp;&nbsp;class Fixnum<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alias :soma_velha :+<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def +(valor)<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self.to_s + valor if valor.is_a? String<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;soma_velha(valor)<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end<br />
+|&nbsp;&nbsp;end<br />
+
+
+
 
 
 
