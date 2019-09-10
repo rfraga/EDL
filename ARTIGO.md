@@ -150,16 +150,20 @@ Equivalente em Java:
 
 **Monkey Patch**
 
-No Ruby é possível implementar métodos inclusive nas classes nativas da língua, recurso inexistente no Java, que para conseguir um efeito parecido deveria criar uma nova classe já que suas classes são fechadas. Um exemplo interessante dessa característica é a classe Fixnum, subclasse de Integer. O Ruby é uma linguagem fortemente tipada, mas essa característica poderia ser contornada com a inclusão de um novo método na classe Integer, possibiliatando comandos como 1 + "2".
+No Ruby é possível implementar métodos inclusive nas classes nativas da língua, recurso inexistente no Java, que para conseguir um efeito parecido deveria criar uma nova classe já que suas classes são fechadas. Um exemplo interessante dessa característica é a classe Fixnum, subclasse de Integer. O Ruby é uma linguagem fortemente tipada, mas essa característica poderia ser contornada com a inclusão de um novo método na classe Integer, possibilitando comandos como 1 + "2".
 <br />
 
 |&nbsp;&nbsp;class Fixnum<br />
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alias :soma_velha :+<br />
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def +(valor)<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alias :soma_velha :+&nbsp;&nbsp;#Cria o método soma_velha com a estrutura do método +<br />
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def +(valor)&nbsp;&nbsp;#Redefinindo o método + da classe Fixnum<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self.to_s + valor if valor.is_a? String<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;soma_velha(valor)<br />
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end<br />
 |&nbsp;&nbsp;end<br />
+|<br />
+|&nbsp;&nbsp; print 1 + "2"&nbsp;&nbsp;#Agora ao invés de erro, 1 será concatenado com a string 2, formando a string "12"
+
+
 
 
 
