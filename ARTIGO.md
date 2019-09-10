@@ -195,7 +195,9 @@ Caelum - A linguagem Ruby: https://www.caelum.com.br/apostila-ruby-on-rails/a-li
 
 Arthur de Moura Del Esposte - Orientação a Objetos com Ruby: https://www.ime.usp.br/~esposte/documents/aula-ruby/aula01/Aula01.pdf<br />
 
-Carlos Henrique Costa Junior, Daniel de Andrade, Darlan Pedro de Campos e Guilherme Silvestre Gomes - Ruby: https://www.inf.ufsc.br/~frank.siqueira/INE5612/Seminario2010.1/Ruby.pdf
+Carlos Henrique Costa Junior, Daniel de Andrade, Darlan Pedro de Campos e Guilherme Silvestre Gomes - Ruby: https://www.inf.ufsc.br/~frank.siqueira/INE5612/Seminario2010.1/Ruby.pdf<br />
+
+AkitaOnRails - Micro-Tutorial de Ruby - Parte I :https://www.akitaonrails.com/2008/11/10/micro-tutorial-de-ruby-parte-i
 
 
 
